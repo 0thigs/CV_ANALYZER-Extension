@@ -1,0 +1,80 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste Tailwind CSS</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body
+    style="
+      width: 400px;
+      height: 450px;
+      font-family: Signika, sans-serif;
+      display: flex;
+      flex-direction: column;
+    "
+  >
+    <div
+      class="flex items-center justify-center p-6 bg-gray-800 border-b-4 border-green-500 shadow"
+    >
+      <h1 class="text-3xl font-bold tracking-wide text-white">CV ANALYSER</h1>
+    </div>
+
+    <main
+      class="flex flex-col items-center justify-center p-6 bg-white rounded"
+    >
+      <div class="w-full max-w-xs">
+        <form class="px-8 pt-6 pb-8 mb-4 bg-white">
+          <div class="mb-4">
+            <label
+              class="block mb-2 text-sm font-bold text-gray-700"
+              for="api-key"
+            >
+              Api Key
+            </label>
+            <input
+              class="w-full px-3 py-2 leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+              id="api-key"
+              type="text"
+              placeholder="Api Key"
+            />
+          </div>
+          <div class="mb-6">
+            <label
+              class="block mb-2 text-sm font-bold text-gray-700"
+              for="password"
+            >
+              Choose File <span class="font-normal text-gray-400">(PDF)</span>
+            </label>
+            <input
+              type="file"
+              class="text-sm text-stone-500 file:mr-5 file:py-1 file:px-3 file:border-[1px] file:text-xs file:font-medium file:bg-stone-50 file:text-stone-700 hover:file:cursor-pointer hover:file:bg-blue-50 hover:file:text-blue-700"
+            />
+            <!-- <p class="text-xs italic text-red-500">Please choose a password.</p> -->
+          </div>
+          <div class="flex items-center justify-between">
+            <button
+              class="px-4 py-2 font-bold text-white bg-green-500 rounded hover:bg-green-600 focus:outline-none focus:shadow-outline"
+              type="button"
+            >
+              Send
+            </button>
+          </div>
+        </form>
+        <p class="text-xs text-center text-gray-500">
+          &copy;2024 Thigs Ltda. All rights reserved.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
